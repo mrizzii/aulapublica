@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - MFR Services</title>
+  <style>
+    /* Menu */
+    nav {
+      text-align: center;
+      margin: 15px 0;
+      font-size: 18px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    /* Estilo do título */
+    .titulo-contato {
+      text-align: center;
+      font-size: 28px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      margin: 25px 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #001f4d, #0056b3);
+      padding: 12px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    /* Formulário */
+    .form-contato {
+      width: 70%;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .form-contato label {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .form-contato input, 
+    .form-contato select,
+    .form-contato textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-contato input:focus,
+    .form-contato select:focus,
+    .form-contato textarea:focus {
+      border: 1px solid #0056b3;
+      box-shadow: 0 0 8px rgba(0,86,179,0.3);
+      outline: none;
+    }
+
+    .form-contato button {
+      padding: 12px;
+      background: linear-gradient(90deg, #0056b3, #007bff);
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    .form-contato button:hover {
+      background: linear-gradient(90deg, #004494, #0056b3);
+      transform: scale(1.05);
+    }
+
+    /* Tabela de contato */
+    .tabela-contato {
+      width: 70%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 16px;
+    }
+
+    .tabela-contato thead th {
+      background: linear-gradient(90deg, #0056b3, #007bff);
+      color: #fff;
+      padding: 14px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .tabela-contato tbody td {
+      padding: 14px;
+      border-bottom: 1px solid #e6e6e6;
+      text-align: center;
+    }
+
+    .tabela-contato tbody tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .tabela-contato tbody tr:hover {
+      background: #e6f0ff;
+      transition: background 0.3s ease;
+    }
+
+    .tabela-contato a {
+      color: #0056b3;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.2s;
+    }
+
+    .tabela-contato a:hover {
+      color: #ff6600;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu de navegação -->
+  <nav>
+    <a href="../index.html">Home</a> |
+    <a href="../curriculo/curriculo.html">Currículo</a> |
+    <a href="../servico/servico.html">Serviços</a> |
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <!-- Título -->
+  <h1 class="titulo-contato">📩 Entre em Contato</h1>
+
+  <!-- Formulário de contato -->
+  <form class="form-contato">
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label>Você é:</label>
+    <input type="radio" id="pf" name="tipo" value="Pessoa Física" checked>
+    <label for="pf">Pessoa Física</label>
+    <input type="radio" id="pj" name="tipo" value="Pessoa Jurídica">
+    <label for="pj">Pessoa Jurídica</label>
+
+    <label for="horario">Melhor horário para contato:</label>
+    <select id="horario" name="horario">
+      <option>Manhã</option>
+      <option>Tarde</option>
+      <option>Noite</option>
+    </select>
+
+    <label for="servico">Tipo de serviço desejado:</label>
+    <input type="checkbox" id="site1" name="servico" value="Site Estático">
+    <label for="site1">Site Estático</label>
+    <input type="checkbox" id="site2" name="servico" value="Site Dinâmico">
+    <label for="site2">Site Dinâmico</label>
+    <input type="checkbox" id="site3" name="servico" value="Avançado">
+    <label for="site3">Avançado</label>
+
+    <label for="descricao">Breve descrição do serviço:</label>
+    <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva sua ideia aqui..."></textarea>
+
+    <button type="submit">Enviar Proposta</button>
+  </form>
+
+  <!-- Tabela de informações de contato -->
+  <h2 class="titulo-contato">📞 Meus Contatos Diretos</h2>
+
+  <table class="tabela-contato">
+    <thead>
+      <tr>
+        <th>Canal</th>
+        <th>Informação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Email</td>
+        <td><a href="mailto:seuemail@exemplo.com">mrizzi.mfr@gmail.com</a></td>
+      </tr>
+      <tr>
+        <td>Telefone</td>
+        <td><a href="tel:+5511999999999">(27) 98125-7671</a></td>
+      </tr>
+      <tr>
+        <td>LinkedIn</td>
+        <td><a href="https://www.linkedin.com/in/seuperfil" target="_blank">linkedin.com/in/matheusrizzi</a></td>
+      </tr>
+      <tr>
+        <td>Instagram</td>
+        <td><a href="https://www.instagram.com/matheus_rizzi/" target="_blank">@matheus_rizzi</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

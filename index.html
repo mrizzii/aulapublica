@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LANDING PAGE — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">LANDING PAGE - MFR</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="curriculo/curriculo.html">Currículo</a></li>
+          <li><a href="github/github.html">GitHub</a></li>
+          <li><a href="servico/servico.html">Serviços</a></li>
+          <li><a href="contato/contato.html" class="btn-contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+  <!-- Foto e história -->
+  <section id="sobre" class="hero">
+    <div class="hero-left">
+      <table class="tabela-historia">
+        <!-- Título da tabela -->
+        <tr>
+          <th colspan="3">MINHA HISTÓRIA</th>
+        </tr>
+
+        <!-- Linha de fotos lado a lado -->
+        <tr>
+          <td>
+            <img src="img/nurse.png" alt="Foto principal" />
+          </td>
+          <td>
+            <img src="img/EU.jpeg" alt="Foto 1" />
+          </td>
+          <td>
+            <img src="img/eu2.JPG" alt="Foto 2" />
+          </td>
+        </tr>
+
+        <!-- Linha da história -->
+        <tr>
+          <td colspan="3">
+            <h3>Sobre mim</h3>
+            <p>
+              Meu nome é Matheus Rizzi, tenho 28 anos e moro em Serra - ES. Minha vida acadêmica e profissional se iniciou na Enfermagem antes da área da tecnologia. 
+              Sempre fui apaixonado por tecnologia e atualmente decidi iniciar Sistemas de Informação.
+Minha trajetória acadêmica começou na Unidversidade Federal do Espírito Santo, onde concluí meu curso de Enfermagem e obstetrícia. Ainda na Universidade participei de feiras ciêntificas, congressos, Inciação Científica e estágios extra-curriculares em Hospitais da Grande Vitória.
+Logo após, comecei a trabalhar como enfermeiro assistencial no Hospital Evangélico de Vila Velha - HEVV. Estive na linha de frente ao combate contra Covid-19, onde foram 2 anos muito difíceis.
+Profissionalmente, tenho experiência em Gestão e Audiotria Hospitalar. Hoje pretendo eveoluir na área da tecnoligia e quebrar barreiras, uma vez que este mundo é completamente novo e desconhecido para mim. Cada dia tem sido uma descoberta e quero estar pronto para novos desafios.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+</main>
+
+<!-- CSS -->
+<style>
+  .tabela-historia {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .tabela-historia th {
+    background-color: #4478cb;
+    color: white;
+    font-size: 22px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .tabela-historia td {
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+
+  .tabela-historia img {
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .tabela-historia img:hover {
+    transform: scale(1.05);
+  }
+
+  .tabela-historia h3 {
+    margin-top: 10px;
+    color: #333;
+  }
+
+  .tabela-historia p {
+    text-align: justify;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+</style>
+
+        <h2>Olá — eu sou Matheus Rizzi</h2>
+        <p><strong>Breve resumo:</strong> Enfermeiro e Estudante de Sistemas de Informação. Objetivo: tornar-me desenvolvedor front-end/UX e criar sites profissionais para pequenos e grandes negócios.</p>
+
+        <h3>Objetivos profissionais</h3>
+        <p>Trabalhar com design de interfaces, desenvolvimento front-end e gestão de projetos.</p>
+
+        <a href="#rodape" class="anchor-link">Ver mais no final da página</a>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="card">
+      <h3>Habilidades</h3>
+      <ul>
+        <li>Enfermagem assistencial, Centro cirúrgico, auditoria e gestão</li>
+        <li>HTML5</li>
+        <li>Design responsivo e princípios de UX</li>
+        <li>Prototipação (Figma) e criação de wireframes</li>
+        <li>Integração com formulários e envio de e-mail</li>
+        <li>Pacote Office (Word, Excel, Power Point)</li>
+      </ul>
+    </section>
+
+    <!-- Vida pessoal -->
+    <section id="pessoal" class="card">
+      <h3>Vida pessoal</h3>
+      <p><strong>Hobbies:</strong> Ir ao cinema, praia, assistir séries, ouvir músicas.</p>
+      <p><strong>Time:</strong> Não sou fã de futebol, mas sou Palmeirense por influência do meu Irmão.</p>
+
+      <!-- áudio -->
+      <div class="media-row">
+        <div>
+          <h4>Uma música que gosto</h4>
+          <!-- coloque audio/musica.mp3 na pasta audio/ -->
+          <audio controls>
+            <source src="music/musica.m4a" type="audio/mpeg" />
+          </audio>
+        </div>
+
+        <!-- Seção de vídeo -->
+<h2 style="text-align:center; margin-top:30px;">🎵 Vídeo: Abracadabra – Lady Gaga</h2>
+
+<div style="text-align:center; margin: 20px 0;">
+  <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/vBynw9Isr28" 
+          title="Abracadabra - Lady Gaga" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
+</div>
+
+
+    <!-- Vida acadêmica -->
+<section id="academico" class="card">
+  <h3>Vida Acadêmica</h3>
+  <table class="table-academico">
+    <thead>
+      <tr>
+        <th>Período</th>
+        <th>Instituição</th>
+        <th>Curso / Observações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2012–2014</td>
+        <td>Escola Contec</td>
+        <td>Ensino Médio</td>
+      </tr>
+      <tr>
+        <td>2015–2019</td>
+        <td>Universidade Federal do Espírito Santo</td>
+        <td>Enfermagem e Obstetrícia</td>
+      </tr>
+      <tr>
+        <td>2025–presente</td>
+        <td>Universidade Vila Velha</td>
+        <td>Sistemas de Informação</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- CSS -->
+<style>
+  .table-academico {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .table-academico th, .table-academico td {
+    border: 2px solid #4478cb; /* bordas azul marinho */
+    padding: 12px;
+    text-align: center;
+  }
+
+  .table-academico th {
+    background-color: #4478cb; /* fundo azul marinho */
+    color: white;              /* texto branco */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .table-academico td {
+    background-color: #f2f2f2;
+  }
+
+  .card h3 {
+    color: #4478cb;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+</style>
+
+      <h4>Matérias atuais</h4>
+      <ul>
+        <li>Construção de Software para Web</li>
+        <li>Experiência e Interfaces com o Usuário</li>
+        <li>Desing e desenvolvimento de Bancos de Dados</li>
+        <li>Lógica para Computação</li>
+        <li>Fundamentos da Tecnologia para Computação</li>
+      </ul>
+
+      <p>Participações em eventos: InovaWeek (2025).</p>
+    </section>
+
+    <!-- Links ancorados internos -->
+    <section class="card">
+      <h3>Links rápidos</h3>
+      <p><a href="#sobre">Ir para Sobre</a> | <a href="#habilidades">Habilidades</a> | <a href="#academico">Acadêmico</a></p>
+    </section>
+  </main>
+
+  <footer id="rodape" class="site-footer">
+    <div class="container">
+      <p>Quer um site profissional? <a href="servico/servico.html">Veja os serviços</a> ou <a href="contato/contato.html">entre em contato</a>.</p>
+      <p>&copy; 2025 — Matheus Rizzi</p>
+    </div>
+  </footer>
+</body>
+</html>
